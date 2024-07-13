@@ -20,11 +20,15 @@ Bright Light Shop is a JavaFX-based store management application for a video ren
 - Display of items and customers with various sorting options
 - Data persistence (save and load from disk)
 
-![Project Demo](./)
-![Project Demo](./others/login.png)
-![Project Demo](./others/realtimechat.png)
-![Project Demo](./others/userprofile.png)
-![Project Demo](./others/homepage.png)
+![Project Demo](./other/diagram.png)
+![Project Demo](./other/startpage.png)
+![Project Demo](./other/homepage.png)
+![Project Demo](./other/search.png)
+![Project Demo](./other/product.png)
+![Project Demo](./other/cart.png)
+![Project Demo](./other/rent.png)
+![Project Demo](./other/users.png)
+![Project Demo](./other/add.png)
 
 
 ## Installation
