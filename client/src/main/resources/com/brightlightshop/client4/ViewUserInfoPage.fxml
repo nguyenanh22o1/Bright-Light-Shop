@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="880.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.brightlightshop.client4.controllers.pages.ViewUserInfoPageController">
+   <BorderPane prefHeight="880.0" prefWidth="1280.0">
+      <center>
+         <ScrollPane prefHeight="781.0" prefWidth="735.0" BorderPane.alignment="CENTER">
+            <content>
+               <VBox alignment="TOP_CENTER" prefHeight="778.0" prefWidth="1280.0">
+                  <children>
+                     <Button fx:id="backToHomepageButton" mnemonicParsing="false" onAction="#onBackToHomepageButtonClick" onMouseEntered="#backToHomePageEnter" onMouseExited="#backToHomePageExit" prefHeight="30.0" prefWidth="139.0" style="-fx-background-color: #ffbd73;" text="&lt; Back to homepage">
+                        <VBox.margin>
+                           <Insets bottom="20.0" left="-745.0" top="10.0" />
+                        </VBox.margin>
+                     </Button>
+                     <VBox maxWidth="-Infinity" prefHeight="438.0" prefWidth="890.0" spacing="20.0" style="-fx-background-color: WHITE; -fx-background-radius: 5;">
+                        <children>
+                           <Label fx:id="titleLabel" text="Customer Information">
+                              <font>
+                                 <Font size="24.0" />
+                              </font>
+                              <VBox.margin>
+                                 <Insets />
+                              </VBox.margin>
+                              <padding>
+                                 <Insets top="5.0" />
+                              </padding>
+                           </Label>
+                           <Line endX="760.0" startX="-100.0" stroke="#c3c3c3" />
+                           <HBox alignment="CENTER_LEFT" maxWidth="-Infinity" prefHeight="243.0" prefWidth="851.0" spacing="20.0">
+                              <children>
+                                 <VBox alignment="CENTER_RIGHT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="219.0" prefWidth="173.0" spacing="5.0">
+                                    <children>
+                                       <Label fx:id="cusInfoFirstName1" text="First Name">
+                                          <font>
+                                             <Font size="18.0" />
+                                          </font>
+                                       </Label>
+                                       <Label fx:id="cusInfoLastName1" text="Last Name">
+                                          <font>
+                                             <Font size="18.0" />
+                                          </font>
+                                       </Label>
+                                       <Label fx:id="cusInfoPhone1" text="Phone">
+                                          <font>
+                                             <Font size="18.0" />
+                                          </font>
+                                       </Label>
+                                       <Label fx:id="cusInfoAddress1" text="Address">
+                                          <font>
+                                             <Font size="18.0" />
+                                          </font>
+                                       </Label>
+                                       <Label fx:id="cusInfoUsername1" text="Username">
+                                          <font>
+                                             <Font size="18.0" />
+                                          </font>
+                                       </Label>
+                                       <Label fx:id="cusInfoBalance1" text="Balance">
+                                          <font>
+                                             <Font size="18.0" />
+                                          </font>
+                                       </Label>
+                                       <Label fx:id="cusInfoAccountType1" text="AccountType">
+                                          <font>
+                                             <Font size="18.0" />
+                                          </font>
+                                       </Label>
+                                       <Label fx:id="rewardPointLabel1" layoutX="79.0" layoutY="214.0" text="Reward Point">
+                                          <font>
+                                             <Font size="18.0" />
+                                          </font>
+                                       </Label>
+                                    </children>
+                                 </VBox>
+                                 <VBox alignment="CENTER_LEFT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="243.0" prefWidth="328.0" spacing="5.0">
+                                    <children>
+                                       <Label fx:id="cusInfoFirstName" text="firstName">
+                                          <font>
+                                             <Font size="18.0" />
+                                          </font>
+                                       </Label>
+                                       <Label fx:id="cusInfoLastName" text="lastName">
+                                          <font>
+                                             <Font size="18.0" />
+                                          </font>
+                                       </Label>
+                                       <Label fx:id="cusInfoPhone" text="phone">
+                                          <font>
+                                             <Font size="18.0" />
+                                          </font>
+                                       </Label>
+                                       <Label fx:id="cusInfoAddress" text="address">
+                                          <font>
+                                             <Font size="18.0" />
+                                          </font>
+                                       </Label>
+                                       <Label fx:id="cusInfoUsername" text="username">
+                                          <font>
+                                             <Font size="18.0" />
+                                          </font>
+                                       </Label>
+                                       <HBox prefHeight="0.0" prefWidth="554.0">
+                                          <children>
+                                             <Label alignment="BOTTOM_CENTER" prefHeight="20.0" prefWidth="5.0" text="\$">
+                                                <font>
+                                                   <Font size="13.0" />
+                                                </font>
+                                             </Label>
+                                             <Label fx:id="cusInfoBalance" prefHeight="27.0" prefWidth="226.0" text="balance">
+                                                <font>
+                                                   <Font size="18.0" />
+                                                </font>
+                                             </Label>
+                                          </children>
+                                       </HBox>
+                                       <Label fx:id="cusInfoAccountType" text="accountType">
+                                          <font>
+                                             <Font size="18.0" />
+                                          </font>
+                                       </Label>
+                                       <Label fx:id="rewardPointLabel" layoutX="10.0" layoutY="214.0" text="rewardPoint">
+                                          <font>
+                                             <Font size="18.0" />
+                                          </font>
+                                       </Label>
+                                    </children>
+                                 </VBox>
+                                 <ImageView fitHeight="210.0" fitWidth="220.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                       <Image url="@images/hello_icon.png" />
+                                    </image>
+                                 </ImageView>
+                              </children>
+                           </HBox>
+                           <Line endX="760.0" startX="-100.0" stroke="#c3c3c3" />
+                           <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="86.0" prefWidth="851.0">
+                              <children>
+                                 <TextField fx:id="addBalanceTextField" layoutX="71.0" layoutY="11.0" prefHeight="29.0" prefWidth="102.0" promptText="\$" />
+                                 <Button fx:id="addBalanceButton" layoutX="195.0" layoutY="11.0" mnemonicParsing="false" onAction="#onAddBalanceButtonClick" onMouseEntered="#addBalanceEnter" onMouseExited="#addBalanceExit" prefHeight="29.0" prefWidth="88.0" style="-fx-background-color: #ffbd73;" text="Add Balance" />
+                                 <Label fx:id="addBalanceLabel" layoutX="110.0" layoutY="54.0" prefHeight="17.0" />
+                              </children>
+                           </Pane>
+                        </children>
+                        <padding>
+                           <Insets left="15.0" right="10.0" />
+                        </padding>
+                     </VBox>
+                     <VBox fx:id="purchaseHistory" maxWidth="-Infinity" prefHeight="213.0" prefWidth="888.0" spacing="20.0" style="-fx-background-color: WHITE; -fx-background-radius: 5;">
+                        <VBox.margin>
+                           <Insets top="10.0" />
+                        </VBox.margin>
+                        <padding>
+                           <Insets left="15.0" />
+                        </padding></VBox>
+                  </children>
+               </VBox>
+            </content>
+         </ScrollPane>
+      </center>
+      <top>
+         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+               <HBox fx:id="navigationBar" alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="219.0" />
+            </children>
+         </HBox>
+      </top>
+   </BorderPane>
+
+</AnchorPane>
